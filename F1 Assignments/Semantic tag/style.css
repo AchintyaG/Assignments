@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding:0;
+    color: aliceblue;
+    background-color:rgb(94, 112, 112);
+   
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    background-color: black;
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    height: 100%;
+    
+}
+.actor-container{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
