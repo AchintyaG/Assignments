@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+   <link rel="stylesheet" href="./Style.css">
 </head>
 
 <body>
@@ -72,8 +73,8 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam repudiandae
             dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil
-            voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet <img
-                src="http://unsplash.it/200/200" class="align-right slide-in"> temporibus doloremque possimus facilis.
+            voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet 
+            <img src="http://unsplash.it/200/200" class="align-right slide-in"> temporibus doloremque possimus facilis.
             Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis
             eum explicabo placeat reiciendis labore iste sint. Consectetur expedita dignissimos, non quos distinctio,
             eos rerum facilis eligendi. Asperiores laudantium, rerum ratione consequatur, culpa consectetur possimus
@@ -146,104 +147,8 @@
 
 
 
-
-    </div>
-
-    <script>
-        function debounce(func, wait = 20, immediate = true) {
-            var timeout;
-            return function () {
-                var context = this, args = arguments;
-                var later = function () {
-                    timeout = null;
-                    if (!immediate) func.apply(context, args);
-                };
-                var callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func.apply(context, args);
-            };
-        }
-        function handleSlide() {
-            var ScrolledImg = document.querySelectorAll('.slide-in');
-            ScrolledImg.forEach((img) => {
-                    var yd = window.scrollY + window.innerHeight - img.height/ 2 ;
-                    var od = img.offsetTop + img.height;
-                    var isImageFullyScrolled = yd > od;
-                    var isImageHalfScroold = yd > img.offsetTop;
-                    if(isImageHalfScroold && !isImagefullyScrolled)
-                        {
-                            img.classList.add("active");
-                        }
-                            else
-                        {
-                            img.classList.remove("active");
-                        }
-        });
-    }
-    window.addEventListener('Scroll', debounce(handleSlide));
-    </script>
-
-    <style>
-        html {
-            box-sizing: border-box;
-            background: #ffc600;
-            font-family: 'helvetica neue';
-            font-size: 20px;
-            font-weight: 200;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
-        .site-wrap {
-            max-width: 700px;
-            margin: 100px auto;
-            background: white;
-            padding: 40px;
-            text-align: justify;
-        }
-
-        .align-left {
-            float: left;
-            margin-right: 20px;
-        }
-
-        .align-right {
-            float: right;
-            margin-left: 20px;
-        }
-
-        .slide-in {
-            opacity: 0;
-            transition: all .5s;
-        }
-
-        .align-left.slide-in {
-            transform: translateX(-30%) scale(0.95);
-        }
-
-        .align-right.slide-in {
-            transform: translateX(30%) scale(0.95);
-        }
-
-        .slide-in.active {
-            opacity: 1;
-            transform: translateX(0%) scale(1);
-        }
-    </style>
-
+</div> 
+<script src="./script.js"></script>
 </body>
 
 </html>

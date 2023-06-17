@@ -1,0 +1,21 @@
+div{
+	display: flex;
+	flex-flow: column wrap;
+    height:100px;
+	width:100px;  
+	
+	
+}
+.Three
+{
+   background:green;	
+}
+.Two{
+	background:red;
+}
+.One{
+	background:blue;
+}
+.content{
+	justify-self: center;
+}
