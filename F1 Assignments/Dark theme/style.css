@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#app{
+	margin:0px;
+	height:100vh;
+	width:100vw;
+	text-align:center;
+}
+.day{
+	background-color:white;
+	color:black;
+}
+.night{
+  background-color: black;
+  color:white;
+}
+
+.button_day{
+    margin:5px;
+	padding:2px;
+}

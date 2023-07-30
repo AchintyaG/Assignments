@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job App Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+		<div>
+			<label for="name" id="#name">Name*</label>
+            <input type="text" placeholder="Enter Your Name" required>
+		</div>
+		<div>
+            <label for="email" id="#email">Email*</label>
+            <input type="email"placeholder="Provide Your Email" required>
+        </div>
+		<div>
+            <label>Gender*</label>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male</label>
+            <input type="radio" id="femaile" name="gender" required>
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" required>
+            <label for="others">Others</label>
+        </div>
+		<div>
+            <label for="Laptop">Laptop Brands</label>
+            <select name="Laptop" id="Laptop">
+                <option value="Apple">Apple</option>
+                <option value="Asus">Asus</option>
+                <option value="HP">Hp</option>
+            </select>           
+        </div>
+		<div>
+            <label for="age">Age*</label>
+            <input type="number" id="#age" name="age" required>
+        </div>
+		<div>
+            <label for="Dob">DOB*</label>
+            <input type="date" id="#dob" name="Dob"required>
+        </div>
+		<div>
+            <label for="password">Password</label>
+            <input type="password" id="#password" name="password" required>
+        </div>
+		<div>
+                <label for="portfolio">Portfolio URL</label>
+                <input type="url" id="portfolio" name="portfolio">
+        </div>
+     <Button>Submit Button</Button>        
+	</form>
+</body>
+</html>
